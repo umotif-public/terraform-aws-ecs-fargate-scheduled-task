@@ -8,8 +8,20 @@ Terraform 0.12. Pin module version to `~> v1.0`. Submit pull-requests to `master
 ## Usage
 
 ```hcl
-module "name" {
-	...
+module "ecs-fargate-scheduled-task" {
+  source = "umotif-public/ecs-fargate-scheduled-task/aws"
+  version = "~> 1.0"
+
+  name_prefix = "test-scheduled-task"
+
+  ecs_cluster_arn = aws_ecs_cluster.main.arn
+
+  task_role_arn      = var.task_role_arn
+  execution_role_arn = var.execution_role_arn
+
+  event_target_task_definition_arn = var.event_target_task_definition_arn
+  event_rule_schedule_expression   = "rate(1 minute)"
+  event_target_subnets             = ["subnet-1","subnet-2"]
 }
 ```
 

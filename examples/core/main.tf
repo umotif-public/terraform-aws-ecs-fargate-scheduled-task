@@ -37,7 +37,7 @@ module "ecs-task-definition" {
   task_host_port      = "80"
 }
 
-module "ecs-scheduled-task" {
+module "ecs-fargate-scheduled-task" {
   source = "../.."
 
   name_prefix = "test-scheduled-task"
