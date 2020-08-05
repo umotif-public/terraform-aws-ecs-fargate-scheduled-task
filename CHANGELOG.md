@@ -5,7 +5,8 @@ All notable changes to this project will be documented in this file.
 <a name="unreleased"></a>
 ## [Unreleased]
 
-- update docs and add chglog
+- Update module versions to support v3 provider
+- Feature/updates ([#1](https://github.com/umotif-public/terraform-aws-ecs-fargate-scheduled-task/issues/1))
 
 
 <a name="1.0.0"></a>

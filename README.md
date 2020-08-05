@@ -10,7 +10,7 @@ Terraform 0.12. Pin module version to `~> v1.0`. Submit pull-requests to `master
 ```hcl
 module "ecs-fargate-scheduled-task" {
   source = "umotif-public/ecs-fargate-scheduled-task/aws"
-  version = "~> 1.0"
+  version = "~> 1.0.0"
 
   name_prefix = "test-scheduled-task"
 
@@ -40,13 +40,16 @@ Module managed by [Marcin Cuber](https://github.com/marcincuber) [LinkedIn](http
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| terraform | >= 0.12.6, < 0.14 |
+| aws | >= 2.45, < 4.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | n/a |
+| aws | >= 2.45, < 4.0 |
 
 ## Inputs
 
