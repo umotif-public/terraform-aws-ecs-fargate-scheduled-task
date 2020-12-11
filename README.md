@@ -1,3 +1,5 @@
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/umotif-public/terraform-aws-ecs-fargate-scheduled-task?style=social)
+
 # terraform-aws-ecs-fargate-scheduled-task
 Terraform module to create AWS ECS Fargate Scheduled Task
 
